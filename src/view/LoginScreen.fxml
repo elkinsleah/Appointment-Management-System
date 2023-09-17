@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: AF9fA5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreenController">
+    <children>
+        <Label fx:id="appointmentManagementSystemLabel" layoutX="108.0" layoutY="99.0" style="-fx-text-fill: 92898AA7;" text="Appointment Management System" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <GridPane layoutX="90.0" layoutY="168.0" prefHeight="125.0" prefWidth="369.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.97329711914062" minWidth="10.0" prefWidth="99.1126708984375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.8873291015625" minWidth="10.0" prefWidth="244.8873291015625" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label fx:id="usernameLabel" prefHeight="24.0" prefWidth="122.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label fx:id="passwordLabel" prefHeight="18.0" prefWidth="121.0" text="Password" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <TextField fx:id="usernameField" GridPane.columnIndex="1" />
+                <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+        <ButtonBar layoutX="155.0" layoutY="298.0" prefHeight="40.0" prefWidth="307.0">
+            <buttons>
+                <Button fx:id="exitButton" mnemonicParsing="false" onAction="#onActionExitButton" prefHeight="27.0" text="Exit" textFill="RED" />
+                <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onActionLoginButton" prefHeight="27.0" prefWidth="176.0" text="Login" textFill="#008225">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+            </buttons>
+        </ButtonBar>
+      <Label fx:id="timeZoneLabel" layoutX="300.0" layoutY="360.0" text="Time Zone:" />
+    </children>
+</AnchorPane>

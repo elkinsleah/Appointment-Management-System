@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="1000.0" style="-fx-background-color: #AF9fA5 #AF9fA5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomersController">
+    <children>
+        <AnchorPane layoutY="52.0" prefHeight="366.0" prefWidth="1000.0" style="-fx-background-color: #92898A;">
+            <children>
+                <Label layoutX="6.0" layoutY="28.0" text="Customers" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+            <TableView fx:id="customersTableView" layoutX="10.0" layoutY="57.0" prefHeight="253.0" prefWidth="980.0">
+               <columns>
+                  <TableColumn fx:id="custIdCol" prefWidth="50.0" text="ID" />
+                  <TableColumn fx:id="custNameCol" prefWidth="140.0" text="Name" />
+                  <TableColumn fx:id="custAddressCol" prefWidth="180.0" text="Address " />
+                  <TableColumn fx:id="custPostalCol" prefWidth="140.0" text="Postal Code" />
+                  <TableColumn fx:id="custDivisionCol" prefWidth="180.0" text="Division" />
+                  <TableColumn fx:id="custCountryCol" prefWidth="140.0" text="Country" />
+                  <TableColumn fx:id="custPhoneCol" prefWidth="150.0" text="Phone" />
+               </columns>
+            </TableView>
+            </children></AnchorPane>
+      <Button fx:id="returnButton" layoutX="14.0" layoutY="14.0" maxHeight="23.0" minHeight="23.0" mnemonicParsing="false" onAction="#onActionReturnButton" text="Return to Main Menu" />
+      <Button fx:id="deleteButton" layoutX="704.0" layoutY="429.0" maxHeight="27.0" minWidth="120.0" mnemonicParsing="false" onAction="#onActionDeleteButton" text="Delete" textFill="RED" />
+      <Button fx:id="updateCustomerButton" layoutX="454.0" layoutY="428.0" maxHeight="27.0" maxWidth="120.0" minHeight="27.0" minWidth="120.0" mnemonicParsing="false" onAction="#onActionUpdateCustomer" prefHeight="27.0" prefWidth="120.0" text="Update Customer" />
+      <Button fx:id="addCustomerButton" layoutX="197.0" layoutY="428.0" minHeight="27.0" minWidth="120.0" mnemonicParsing="false" onAction="#onActionAddCustomer" prefHeight="27.0" prefWidth="120.0" text="Add Customer" />
+    </children>
+</AnchorPane>
